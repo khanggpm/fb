@@ -202,6 +202,16 @@ module.exports = {
       patterns: [
         {
           noErrorOnMissing: true,
+          from: resolvePath('src/static'),
+          to: resolvePath('public/static'),
+        },
+
+      ],
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          noErrorOnMissing: true,
           from: resolvePath('src/.htaccess'),
           to: resolvePath('public'),
         },

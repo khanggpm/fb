@@ -3,6 +3,9 @@ import HomePage from '../pages/home.vue';
 import AboutPage from '../pages/about.vue';
 import FormPage from '../pages/form.vue';
 
+// custom
+import LoginPage from '../pages/auth/login.vue';
+import RegisterPage from '../pages/auth/register.vue';
 
 import DynamicRoutePage from '../pages/dynamic-route.vue';
 import RequestAndLoad from '../pages/request-and-load.vue';
@@ -20,6 +23,10 @@ var routes = [
   {
     path: '/form/',
     component: FormPage,
+  },
+  {
+    path: '/login/',
+    component: LoginPage,
   },
 
 
