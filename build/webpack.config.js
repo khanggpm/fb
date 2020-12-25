@@ -24,7 +24,7 @@ module.exports = {
     app: './src/js/app.js',
   },
   output: {
-    path: resolvePath('docs'),
+    path: resolvePath('public'),
     filename: 'js/[name].js',
     chunkFilename: 'js/[name].js',
     publicPath: '/',
@@ -45,7 +45,7 @@ module.exports = {
     hot: true,
     open: true,
     compress: true,
-    contentBase: '/docs/',
+    contentBase: '/public/',
     disableHostCheck: true,
     historyApiFallback: true,
     watchOptions: {
@@ -203,7 +203,7 @@ module.exports = {
         {
           noErrorOnMissing: true,
           from: resolvePath('src/.htaccess'),
-          to: resolvePath('docs'),
+          to: resolvePath('public'),
         },
 
       ],
