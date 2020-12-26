@@ -20,7 +20,7 @@ import App from '../components/app.vue';
 // Init Framework7-Vue Plugin
 Framework7.use(Framework7Vue);
 
-console.log('ready')
+console.log('helllo')
 // Init App
 new Vue({
   el: '#app',
