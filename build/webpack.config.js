@@ -24,7 +24,7 @@ module.exports = {
     app: './src/js/app.js',
   },
   output: {
-    path: resolvePath('dist'),
+    path: resolvePath('www'),
     filename: 'js/[name].js',
     chunkFilename: 'js/[name].js',
     publicPath: '/',
@@ -45,7 +45,7 @@ module.exports = {
     hot: true,
     open: true,
     compress: true,
-    contentBase: '/dist/',
+    contentBase: '/www/',
     disableHostCheck: true,
     historyApiFallback: true,
     watchOptions: {
@@ -203,7 +203,7 @@ module.exports = {
         {
           noErrorOnMissing: true,
           from: resolvePath('src/static'),
-          to: resolvePath('dist/static'),
+          to: resolvePath('www/static'),
         },
 
       ],
@@ -213,7 +213,7 @@ module.exports = {
         {
           noErrorOnMissing: true,
           from: resolvePath('src/.htaccess'),
-          to: resolvePath('dist'),
+          to: resolvePath('www'),
         },
 
       ],
