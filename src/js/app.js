@@ -21,6 +21,7 @@ import App from '../components/app.vue';
 Framework7.use(Framework7Vue);
 
 console.log('helllo')
+console.log('test')
 // Init App
 new Vue({
   el: '#app',
@@ -30,5 +31,5 @@ new Vue({
   components: {
     app: App
   },
- 
+
 });
