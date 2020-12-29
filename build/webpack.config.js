@@ -24,7 +24,7 @@ module.exports = {
     app: './src/js/app.js',
   },
   output: {
-    path: resolvePath('www'),
+    path: resolvePath('docs'),
     filename: 'js/[name].js',
     chunkFilename: 'js/[name].js',
     publicPath: '/',
@@ -202,7 +202,7 @@ module.exports = {
         {
           noErrorOnMissing: false,
           from: resolvePath('src/static'),
-          to: resolvePath('www/static'),
+          to: resolvePath('docs/static'),
         },
 
       ],
@@ -212,7 +212,7 @@ module.exports = {
         {
           noErrorOnMissing: false,
           from: resolvePath('src/.htaccess'),
-          to: resolvePath('www/'),
+          to: resolvePath('docs/'),
         },
 
       ],
