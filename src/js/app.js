@@ -18,6 +18,8 @@ import '../css/app.css';
 import App from '../components/app.vue';
 
 console.log('test first push')
+
+console.log('go to docs')
 // Init Framework7-Vue Plugin
 Framework7.use(Framework7Vue);
 
