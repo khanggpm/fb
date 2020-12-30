@@ -44,7 +44,7 @@ module.exports = {
     hot: true,
     open: true,
     compress: true,
-    contentBase: '/www/',
+    contentBase: '/docs/',
     disableHostCheck: true,
     historyApiFallback: true,
     watchOptions: {
