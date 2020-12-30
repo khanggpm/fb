@@ -83,11 +83,16 @@
       return {
         // Framework7 Parameters
         f7params: {
-          name: 'My App', // App name
-          theme: 'auto', // Automatic theme detection
+          name: 'KP', // App name
+          theme: 'md', // Automatic theme detection
 
-
-
+          view: {
+            pushState: true,
+            history: true,
+            pushStateSeparator: "",
+            main: true,
+            url: "/",
+          },
           // App routes
           routes: routes,
         },
