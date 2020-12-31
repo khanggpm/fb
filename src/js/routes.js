@@ -12,24 +12,47 @@ import NotFoundPage from '../pages/404.vue';
 import LoginPage from '../pages/auth/login.vue';
 import RegisterPage from '../pages/auth/register.vue';
 
+import firebase from "../../config/firebase.js";
+import store from "../store/index.js";
+
+
+console.log(store.state.user.user.loggedIn)
+function checkAuth(to, from, resolve, reject) {
+  if (store.state.user.user.loggedIn) {
+    resolve('/');
+  } else {
+    reject('/login/');
+  }
+}
+function checkPermission(to, from, resolve, reject) {
+  // if (/* some condition to check user edit permission */) {
+  //   resolve();
+  // } else {
+  //   reject();
+  // }
+}
 
 var routes = [
   {
     path: '/',
     name : 'Home',
     component: HomePage,
+    beforeEnter: [checkAuth, checkPermission],
   },
   {
     path: '/about/',
     component: AboutPage,
+    beforeEnter: [checkAuth, checkPermission],
   },
   {
     path: '/form/',
     component: FormPage,
+    beforeEnter: [checkAuth, checkPermission],
   },
   {
     path: '/login/',
     component: LoginPage,
+    name : "Login"
   },
   {
     path: '/register/',

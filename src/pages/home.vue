@@ -17,20 +17,42 @@
             <f7-list-item link="/login/" title="Login"></f7-list-item>
         </f7-list>
 
+        {{ user}}
+
+        <f7-list>
+            <a href="" @click.prevent="signOut">Log out</a>
+        </f7-list>
+
     </f7-page>
 </template>
 <script>
+
+    import { mapGetters } from "vuex";
+
     export  default {
         data() {
             return {
 
             }
         },
+        computed: {
+            // map `this.user` to `this.$store.getters.user`
+            ...mapGetters({
+                user: "user/user"
+            })
+        },
         created() {
             console.log(' home component')
         },
         methods : {
-
+            signOut() {
+                let self = this;
+                this.$firebase.auth()
+                    .signOut()
+                    .then(() => {
+                        self.$f7router.navigate({name : "Login"});
+                    });
+            }
         }
     }
 </script>

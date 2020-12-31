@@ -63,9 +63,9 @@ Vue.prototype.$firebase = firebase;
 
 Vue.config.productionTip = false
 
-// firebase.auth().onAuthStateChanged(user => {
-//   store.dispatch("fetchUser", user);
-// });
+firebase.auth().onAuthStateChanged(user => {
+  store.dispatch("user/fetchUser", user);
+});
 
 // Init App
 window.F7App = new Vue({
