@@ -16,6 +16,7 @@ import RegisterPage from '../pages/auth/register.vue';
 var routes = [
   {
     path: '/',
+    name : 'Home',
     component: HomePage,
   },
   {

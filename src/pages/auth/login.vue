@@ -33,6 +33,8 @@
 
 <script>
     import imageLink from '../../assets/images/ava.jpg'
+    import { successToast, errorToast } from './../../../config/helper.js'
+
     export default {
         data() {
             return {
@@ -42,8 +44,9 @@
             };
         },
         created() {
-            console.log(this.$toastr)
-            this.$toastr.success('helelo','test')
+        },
+
+        mounted() {
         },
         methods: {
             signIn() {
@@ -56,16 +59,17 @@
                     .auth()
                     .signInWithEmailAndPassword(this.email, this.password)
                     .then(data => {
-                        console.log(data)
-                        that.$toastr.success('helelo','test')
-                        // this.$router.push({ name: "Home" });
+                        self.$f7router.navigate({name : "Home"});
                     })
                     .catch(err => {
-                        this.error = err.message;
-                        that.$toastr.success('helelo','test')
-
+                        console.log(err)
+                        errorToast(err.message)
                     });
             },
+
+            btnGo() {
+                console.log(this.$f7.router)
+            }
 
         },
     };

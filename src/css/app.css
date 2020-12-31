@@ -1,1 +1,90 @@
 /* Your app custom styles here */
+/*$cam = "ed7a40";*/
+
+root {
+    --f7-toast-text-color: #fff;
+    --f7-toast-font-size: 14px;
+    --f7-toast-icon-size: 48px;
+    --f7-toast-max-width: 568px;
+}
+.ios {
+    --f7-toast-bg-color: rgba(0, 0, 0, 0.75);
+    --f7-toast-bg-color-rgb: 0, 0, 0;
+    --f7-toast-padding-horizontal: 16px;
+    --f7-toast-padding-vertical: 12px;
+    --f7-toast-border-radius: 8px;
+    --f7-toast-button-min-width: 64px;
+}
+.md {
+    --f7-toast-bg-color: #009688;
+    --f7-toast-padding-horizontal: 24px;
+    --f7-toast-padding-vertical: 14px;
+    --f7-toast-border-radius: 4px;
+    --f7-toast-button-min-width: 64px;
+}
+.aurora {
+    --f7-toast-bg-color: rgba(0, 0, 0, 0.85);
+    --f7-toast-padding-horizontal: 10px;
+    --f7-toast-padding-vertical: 10px;
+    --f7-toast-border-radius: 4px;
+    --f7-toast-button-min-width: 32px;
+}
+
+.md-error {
+    --f7-toast-bg-color: #ff3b30;
+}
+
+/*router*/
+.router-transition-f7-cover-forward,
+.router-transition-f7-cover-backward {
+    background: #000;
+    perspective: 1200px;
+}
+.router-transition-f7-cover-forward .page-next {
+    animation: f7-cover-next-to-current 450ms forwards;
+}
+.router-transition-f7-cover-forward .page-current {
+    animation: f7-cover-current-to-prev 450ms forwards;
+}
+.router-transition-f7-cover-backward .page-current {
+    animation: f7-cover-current-to-next 450ms forwards;
+}
+.router-transition-f7-cover-backward .page-previous {
+    animation: f7-cover-prev-to-current 450ms forwards;
+}
+@keyframes f7-cover-next-to-current {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+@keyframes f7-cover-current-to-next {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+@keyframes f7-cover-current-to-prev {
+    from {
+        transform: translateZ(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateZ(-300px);
+        opacity: 0.5;
+    }
+}
+@keyframes f7-cover-prev-to-current {
+    from {
+        transform: translateZ(-300px);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}

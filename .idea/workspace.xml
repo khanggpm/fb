@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3785cff-3089-4880-a745-182d8b82699c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth/login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +22,9 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\dev\khangpm\vue\kpami\src\assets\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\dev\khangpm\vue\kpami\src" />
     </key>
@@ -32,5 +40,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1600.860@0.0.1920.1040" timestamp="1609225484079" />
+    <state x="2383" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1609397349482">
+      <screen x="1920" y="0" width="1600" height="860" />
+    </state>
+    <state x="2383" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1600.860@1920.0.1600.860" timestamp="1609397349482" />
   </component>
 </project>

@@ -56,21 +56,19 @@ Vue.component(Row.name, Row);
 
 const appDb = firebase.database()
 Vue.prototype.$http = http;
-Vue.prototype.$toastr = toastr;
+Vue.prototype.toastr = toastr;
 Vue.prototype.$_ = _;
 Vue.prototype.$firebase = firebase;
 
 
 Vue.config.productionTip = false
 
-
-console.log(firebase)
 // firebase.auth().onAuthStateChanged(user => {
 //   store.dispatch("fetchUser", user);
 // });
 
 // Init App
-new Vue({
+window.F7App = new Vue({
   el: '#app',
   router,
   store,

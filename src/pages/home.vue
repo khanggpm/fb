@@ -19,3 +19,18 @@
 
     </f7-page>
 </template>
+<script>
+    export  default {
+        data() {
+            return {
+
+            }
+        },
+        created() {
+            console.log(' home component')
+        },
+        methods : {
+
+        }
+    }
+</script>
